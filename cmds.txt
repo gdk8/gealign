@@ -1,0 +1,5 @@
+sudo perf record -e cache-misses,cpu-cycles,mem-loads,mem-stores,instructions ./gealign 5 10000000
+
+g++ -std=c++17 -g -O3 gealign.cpp -o gealign
+
+
